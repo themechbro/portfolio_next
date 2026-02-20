@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Adrin T Paul Portfolio
+
+Personal developer portfolio built with Next.js to showcase experience, projects, technical skills, credentials, and contact links.
+
+## About This Project
+
+This is a single-page portfolio website focused on clean UI, smooth interactions, and clear technical storytelling.  
+It highlights:
+
+- Professional timeline and impact metrics
+- Featured projects with stack and outcomes
+- Skills grouped by domain
+- Education and certifications
+- Contact actions (email, resume, social profiles)
+
+## Tech Stack
+
+- Next.js (App Router)
+- React
+- Tailwind CSS v4
+- GSAP (section animations and scroll-based motion)
+- Lucide React (button and action icons)
+
+## Key UI Features
+
+- Responsive layout with reusable section components
+- Light/Dark theme toggle with persisted preference
+- Scroll progress indicator
+- Animated CTA/social buttons with icon motion
+- Subtle scroll-triggered content reveals
+
+## Project Structure
+
+```text
+app/
+  components/
+    Hero.js
+    Timeline.js
+    Projects.js
+    Skills.js
+    Credentials.js
+    Contact.js
+    Navbar.js
+    Footer.js
+    DarkModeToggle.js
+    ScrollProgress.js
+  data/
+    timeline.js
+    projects.js
+  globals.css
+  page.js
+public/
+  resume/
+    Adrin_Paul_resume_2yoe_.pdf
+```
 
 ## Getting Started
 
-First, run the development server:
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Open `http://localhost:3000`
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` - start local development server
+- `npm run build` - create production build
+- `npm run start` - run production server
+- `npm run lint` - run ESLint checks
 
-## Learn More
+## Customization
 
-To learn more about Next.js, take a look at the following resources:
+- Update personal/project content in:
+  - `app/data/timeline.js`
+  - `app/data/projects.js`
+  - `app/components/Skills.js`
+  - `app/components/Credentials.js`
+  - `app/components/Contact.js`
+- Update theme and button animation styles in `app/globals.css`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
