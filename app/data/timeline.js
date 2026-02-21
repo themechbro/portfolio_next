@@ -6,6 +6,11 @@ export const timeline = [
     impact: "Improved backend performance by 35%",
     summary:
       "Developing an internal IP Filing Portal with Next.js, React.js, Node.js, Express.js, and PostgreSQL with stronger authentication and session handling.",
+    outcomes: [
+      "Improved backend response performance by 35% through query and API optimization.",
+      "Strengthened platform reliability with secure authentication and session controls.",
+      "Delivered modular services for long-term maintainability and faster feature rollout.",
+    ],
     stack: ["Next.js", "React.js", "Node.js", "Express.js", "PostgreSQL"],
   },
   {
@@ -15,6 +20,11 @@ export const timeline = [
     impact: "Delivered responsive full-stack web modules",
     summary:
       "Built responsive web applications using HTML, CSS, JavaScript, Node.js, Express.js, and MongoDB with EJS-based conditional rendering.",
+    outcomes: [
+      "Delivered multiple responsive full-stack modules during a short internship window.",
+      "Improved development speed using reusable EJS templates and modular route structure.",
+      "Implemented reliable form flows and validation across key user interactions.",
+    ],
     stack: ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "MongoDB"],
   },
   {
@@ -24,6 +34,11 @@ export const timeline = [
     impact: "Improved issue resolution efficiency by 15%",
     summary:
       "Supported operational workflows, collaborated with QA and engineering teams on live issue debugging, and gained exposure to large-scale service reliability.",
+    outcomes: [
+      "Improved issue resolution efficiency by 15% through structured triage workflows.",
+      "Accelerated cross-team debugging with clearer QA-engineering coordination.",
+      "Built strong operational reliability habits in live production support.",
+    ],
     stack: ["Operations", "Live Support", "QA Collaboration", "Reliability"],
   },
 ];

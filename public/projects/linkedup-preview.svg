@@ -1,0 +1,32 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="140" y1="80" x2="1460" y2="920" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1535"/>
+      <stop offset="1" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <linearGradient id="card" x1="180" y1="200" x2="1380" y2="860" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1E2A53"/>
+      <stop offset="1" stop-color="#12214B"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" rx="42" fill="url(#bg)"/>
+  <circle cx="1330" cy="170" r="190" fill="#60A5FA" fill-opacity="0.2"/>
+  <circle cx="240" cy="860" r="150" fill="#93C5FD" fill-opacity="0.2"/>
+  <rect x="160" y="150" width="1280" height="710" rx="28" fill="url(#card)" stroke="#93C5FD" stroke-opacity="0.35" stroke-width="2"/>
+  <rect x="200" y="195" width="124" height="16" rx="8" fill="#60A5FA" fill-opacity="0.45"/>
+  <rect x="200" y="236" width="540" height="14" rx="7" fill="#E2E8F0" fill-opacity="0.8"/>
+  <rect x="200" y="286" width="760" height="210" rx="20" fill="#0B1535" stroke="#3B82F6" stroke-opacity="0.5"/>
+  <circle cx="260" cy="350" r="32" fill="#3B82F6"/>
+  <rect x="318" y="332" width="290" height="16" rx="8" fill="#BFDBFE"/>
+  <rect x="318" y="364" width="510" height="12" rx="6" fill="#93C5FD" fill-opacity="0.75"/>
+  <rect x="318" y="392" width="430" height="12" rx="6" fill="#93C5FD" fill-opacity="0.62"/>
+  <rect x="200" y="522" width="760" height="160" rx="20" fill="#0B1535" stroke="#3B82F6" stroke-opacity="0.4"/>
+  <rect x="240" y="562" width="500" height="14" rx="7" fill="#BFDBFE"/>
+  <rect x="240" y="594" width="430" height="12" rx="6" fill="#93C5FD" fill-opacity="0.7"/>
+  <rect x="1004" y="286" width="396" height="396" rx="24" fill="#0B1535" stroke="#3B82F6" stroke-opacity="0.5"/>
+  <rect x="1040" y="324" width="322" height="190" rx="16" fill="#1D4ED8"/>
+  <rect x="1040" y="540" width="250" height="12" rx="6" fill="#BFDBFE"/>
+  <rect x="1040" y="568" width="300" height="12" rx="6" fill="#93C5FD" fill-opacity="0.7"/>
+  <rect x="1040" y="596" width="206" height="12" rx="6" fill="#93C5FD" fill-opacity="0.5"/>
+  <text x="200" y="108" fill="#DBEAFE" font-size="40" font-family="Segoe UI, Arial, sans-serif" font-weight="700">LinkedUp Product Preview</text>
+</svg>

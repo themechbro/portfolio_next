@@ -20,7 +20,34 @@ const socialLinks = [
     icon: Linkedin,
   },
   { label: "Email", href: "mailto:adrinpaul29@gmail.com", icon: Mail },
-  { label: "LeetCode", href: "https://leetcode.com/u/themechbro/", icon: Code2 },
+  {
+    label: "LeetCode",
+    href: "https://leetcode.com/u/themechbro/",
+    icon: Code2,
+  },
+];
+
+const roleFitTags = [
+  "Backend Engineer",
+  "Full-Stack Engineer",
+  "Node.js + Java",
+  "Remote / Hybrid / On-Site",
+  "Open to Full-time",
+];
+
+const quickStats = [
+  { label: "Years Experience", value: "2+" },
+  { label: "Production Projects", value: "3" },
+  { label: "Backend Performance Gain", value: "35%" },
+];
+
+const recruiterFacts = [
+  { label: "Target Roles", value: "Backend / Full-Stack Engineer" },
+  { label: "Location", value: "India" },
+  { label: "Work Preference", value: "Remote / Hybrid / On-Site" },
+  { label: "Current Role", value: "Full Stack Developer @ CSIR India" },
+  { label: "Availability", value: "Open to Interviewing" },
+  { label: "Primary Stack", value: "Next.js, Node.js, Java, PostgreSQL" },
 ];
 
 export default function Hero() {
@@ -70,6 +97,54 @@ export default function Hero() {
             PostgreSQL, and Spring Boot microservices.
           </p>
 
+          <div className="mt-6 flex flex-wrap gap-2">
+            {roleFitTags.map((tag) => (
+              <span
+                key={tag}
+                className="rounded-full border border-[var(--border)] bg-[var(--surface)] px-3 py-1 text-xs font-semibold uppercase tracking-[0.1em] text-[var(--muted-light)]"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+
+          <div className="mt-8 grid gap-3 sm:grid-cols-3">
+            {quickStats.map((stat) => (
+              <article
+                key={stat.label}
+                className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] px-4 py-3 shadow-[var(--shadow)]"
+              >
+                <p className="text-2xl font-semibold tracking-tight text-[var(--foreground)]">
+                  {stat.value}
+                </p>
+                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--muted-light)]">
+                  {stat.label}
+                </p>
+              </article>
+            ))}
+          </div>
+
+          <div className="mt-6 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-4 shadow-[var(--shadow)]">
+            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">
+              At a Glance
+            </p>
+            <div className="mt-3 grid gap-3 md:grid-cols-2">
+              {recruiterFacts.map((fact) => (
+                <article
+                  key={fact.label}
+                  className="rounded-xl border border-[var(--border)] bg-[var(--surface-strong)] px-3 py-3"
+                >
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[var(--muted-light)]">
+                    {fact.label}
+                  </p>
+                  <p className="mt-1 text-sm font-medium text-[var(--foreground)]">
+                    {fact.value}
+                  </p>
+                </article>
+              ))}
+            </div>
+          </div>
+
           <div className="mt-10 flex flex-wrap gap-4">
             <a
               href="#projects"
@@ -97,7 +172,9 @@ export default function Hero() {
                 <a
                   key={link.label}
                   href={link.href}
-                  target={link.href.startsWith("mailto:") ? undefined : "_blank"}
+                  target={
+                    link.href.startsWith("mailto:") ? undefined : "_blank"
+                  }
                   rel={
                     link.href.startsWith("mailto:")
                       ? undefined
